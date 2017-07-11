@@ -1,0 +1,4 @@
+datasets/*.t7
+logs
+notebooks/*.pyc
+notebooks/.ipynb_checkpoints
