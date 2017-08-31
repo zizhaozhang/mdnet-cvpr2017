@@ -1,5 +1,5 @@
--- Modified from the Ccode for Wide Residual Networks http://arxiv.org/abs/1605.07146
--- To keep the same training settings
+-- Code for Wide Residual Networks http://arxiv.org/abs/1605.07146
+-- (c) Sergey Zagoruyko, 2016
 require 'xlua'
 require 'optim'
 require 'image'
@@ -45,12 +45,9 @@ opt = {
   generate_graph = false,
   multiply_input_factor = 1,
   widen_factor = 1,
-  nGPU = 1,
-  manualSeed = 0
+  nGPU = 1
 }
 opt = xlua.envparams(opt)
-torch.manualSeed(opt.manualSeed)
-cutorch.manualSeedAll(opt.manualSeed)
 
 opt.epoch_step = tonumber(opt.epoch_step) or loadstring('return '..opt.epoch_step)()
 opt.dataset = './datasets/' .. opt.dataset .. '_mean_std.t7'

@@ -1,4 +1,4 @@
 datasets/*.t7
-logs
+logs/*
 notebooks/*.pyc
 notebooks/.ipynb_checkpoints

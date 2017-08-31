@@ -1,10 +1,9 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 export nesterov=true
 export randomcrop_type=reflection
 export generate_graph=true
-
-export save=logs/ecnet_${depth}_${widen_factor}_${dataset}
+export save=logs/ecnet_${depth}_${widen_factor}_${dataset}_${1}
 mkdir -p $save
 CUDA_VISIBLE_DEVICES=$device_id th train.lua | tee $save/log.txt
 
