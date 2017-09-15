@@ -3,7 +3,7 @@ Training code for the CNN part of MDNet
 
 According to the ensemble analysis of ResNet in the paper, the classification module of ResNet is not optimal to use the information of different layers. To solve this problem, we propsoe to use, namely __ensemble_cnnection__, to better utilize multi-scale information from different layers. Our architecture is very similar with pre-act-ResNet (He et al. ECCV, 2016). However, with our simple modification (see code), the performance can be **substantially improved**. 
 
-Out implementation is built upon the code of [Wide ResNet](https://github.com/szagoruyko/wide-residual-networks). Different from it, we found bottleneck residual block performs much better than ``tubby-like`` residual block used by WRN. More explanations are in the paper. 
+Our implementation is built upon the code of [Wide ResNet](https://github.com/szagoruyko/wide-residual-networks). Different from it, we found bottleneck residual block performs much better than ``tubby-like`` residual block used by WRN. More explanations are in the paper. 
 
 ## Dataset
 The data is processed using the standard mean/std normalization.
