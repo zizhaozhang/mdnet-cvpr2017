@@ -1,5 +1,4 @@
-# Torch implementation for [MDNet: A Semantically and Visually Interpretable Medical Image Diagnosis Network](https://www.cise.ufl.edu/~zizhao/mdnet.html)
-
+# Torch implementation for MDNet
 MDNet includes a proposed image model and language model.
 
 ## The image model
